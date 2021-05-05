@@ -1,0 +1,9 @@
+executable = pi_estimation.o
+arguments = $(seed) $(iterations)
+universe = vanilla
+output = result/partial/pi_estimation.$(id).out
+error = result/pi_estimation.err
+log = result/pi_estimation.log
+should_transfer_files = yes
+when_to_transfer_output = on_exit
+queue

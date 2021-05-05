@@ -1,0 +1,9 @@
+JOB job0 pi_estimation.sub
+VARS job0 id="0" iterations="3" seed="3"
+JOB job1 pi_estimation.sub
+VARS job1 id="1" iterations="3" seed="4"
+JOB job2 pi_estimation.sub
+VARS job2 id="2" iterations="3" seed="5"
+JOB final pi_estimation_aggregation.sub
+VARS final count="3"
+PARENT job0 job1 job2 CHILD final

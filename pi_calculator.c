@@ -8,7 +8,7 @@
 
 main(int argc, char* argv)
 {
-   int iterations_number = 100000;
+   int iterations_number = 1000;
    double x_value,y_value;
    int counter = 0;
    double distance;
