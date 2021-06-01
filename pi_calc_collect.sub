@@ -1,0 +1,10 @@
+executable = pi_calc_collect.o
+arguments = $(count)
+universe = vanilla
+output = calc_result/pi_calc_collect.out
+error = calc_result/pi_calc_collect.err
+log = calc_result/pi_calc_collect.log
+should_transfer_files = yes
+when_to_transfer_output = on_exit
+transfer_input_files = calc_result
+queue

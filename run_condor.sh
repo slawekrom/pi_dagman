@@ -1,4 +1,4 @@
-g++ pi_estimation.cpp -o pi_estimation.o
-g++ pi_estimation_aggregation.cpp -o pi_estimation_aggregation.o
-python3 generate_dag.py $1 $2 $3
-condor_submit_dag -f pi_estimation.dag
+g++ pi_calc.cpp -o pi_calc.o
+g++ pi_calc_collect.cpp -o pi_calc_collect.o
+python3 create_dags.py $1 $2 $3
+condor_submit_dag -f pi_calc.dag
